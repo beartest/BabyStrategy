@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+		<script type="text/javascript" src="js/touchSlider/jquery-1.7.1.min.js"></script>
+		<script type="text/javascript" src="jquery.mobile-1.4.5/jquery.mobile-1.4.5.js"></script>
+		<link rel="stylesheet" href="jquery.mobile-1.4.5/jquery.mobile-1.4.5.css" />
+		<link rel="stylesheet" href="css/common.css" />
+
+		<script type="text/javascript" src="js/common.js"></script>
+		<script type="text/javascript" src="js/goodstype.js"></script>
+
+		<title>宝宝攻略</title>
+	</head>
+
+	<body>
+		<div data-role="page" id="pageone">
+
+			<div data-role="header" data-position="fixed" data-tap-toggle="false">
+				<a data-rel="back" data-transition="slide" class="headerbtn back"> </a>
+				<h1>分类</h1>
+				<div class="goodstypeheader">
+					<ul class="goodstypeheaderul">
+						<li><a href="#" class="selected">按品类分类</a></li>
+						<li><a href="#pagetwo" data-transition="slide">按品牌分类</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div data-role="content" class="nopadding">
+				<div class="lefttabdiv">
+					<ul id="dictlevone" class="lefttabul">
+					</ul>
+				</div>
+				<div class="rightcontentdiv">
+					<ul id="dictlevtwo" class="rightcontentul">
+					</ul>
+				</div>
+			</div>
+
+			<div data-role="footer" data-position="fixed" data-tap-toggle="false">
+			</div>
+
+		</div>
+		<div data-role="page" id="pagetwo">
+
+			<div data-role="header" data-position="fixed" data-tap-toggle="false">
+				<a data-rel="back" data-transition="slide" class="headerbtn back"> </a>
+				<h1>分类</h1>
+				<div class="goodstypeheader">
+					<ul class="goodstypeheaderul">
+						<li><a href="#pageone" data-transition="slide" data-direction="reverse">按品类分类</a></li>
+						<li><a href="#" class="selected">按品牌分类</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div data-role="content" class="nopadding">
+				<!--热门品牌-->
+				<div class="whitebg topmargin">
+					<span class="searchtitle">热门品牌</span>
+					<div class="split"></div>
+					<ul id="hotbrandlist" class="hotbrandlist"> 
+					</ul>
+				</div>
+				<!--品牌列表按字母显示-->
+				<ul id="allbrandlist" class="allbrandlist">
+				</ul>
+			</div>
+			</div>
+
+			<div data-role="footer" data-position="fixed" data-tap-toggle="false">
+			</div>
+
+		</div>
+	</body>
+
+</html>

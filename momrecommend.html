@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+		<script type="text/javascript" src="js/touchSlider/jquery-1.7.1.min.js" ></script>
+		<script type="text/javascript" src="jquery.mobile-1.4.5/jquery.mobile-1.4.5.js"></script>
+		<link rel="stylesheet" href="jquery.mobile-1.4.5/jquery.mobile-1.4.5.css" />
+		<link rel="stylesheet" href="css/common.css" />
+
+		<script type="text/javascript" src="js/common.js"></script>
+		<script type="text/javascript" src="js/momrecommend.js"></script>
+		<script type="text/javascript" src="js/touchSlider/jquery.event.drag-1.5.min.js"></script>
+		<script type="text/javascript" src="js/touchSlider/jquery.touchSlider.js"></script>
+
+		<title>宝宝攻略</title>
+	</head>
+
+	<body>
+		<div data-role="page">
+
+			<div data-role="header" data-position="inline" data-tap-toggle="false">
+				<a data-rel="back" data-transition="slide" class="headerbtn back"> </a>
+				<h1>妈妈推荐</h1>
+			</div>
+
+			<div data-role="content" class="nopadding">
+				<!--作者信息-->
+				<div class="authormessage">
+					<img id="authorimg" src="img/defaule-crl.png">
+					<div>
+						<span id="authorname"></span>
+						<p id="authorlev"></p>
+					</div>
+				</div>
+				<!--图片轮播-->
+				<div class="main_visual">
+					<div id="rollbtn" class="flicking_con">
+					</div>
+					<div class="main_image">
+						<ul id="rollimg"> </ul>
+						<a href="javascript:;" id="btn_prev"></a>
+						<a href="javascript:;" id="btn_next"></a>
+					</div>
+				</div>
+				<!--文章内容-->
+				<span id="momrectitle" class="detailtitle"></span>
+				<div class="split"></div>
+				<p id="momreccontent" class="detailcontent"></p>
+				<!--标签-->
+				<div>
+					<img class="labelimg" src="img/momrecommend/label.png" />
+					<span id="momrecGoodsType2" class="blueraduis"></span>
+					<span id="momrecGoodsType4" class="blueraduis"></span>
+					<span id="momrecSuitForTime" class="blueraduis"></span>
+				</div>
+				<div>
+					<span class="discusstitle">评论</span>
+					<ul id="discusslist" class="discusslist">
+					</ul>
+				</div>
+			</div>
+
+			<div data-role="footer" data-position="fixed" data-tap-toggle="false">
+			</div>
+
+		</div>
+	</body>
+
+</html>

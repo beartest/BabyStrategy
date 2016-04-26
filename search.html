@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+		<script type="text/javascript" src="js/touchSlider/jquery-1.7.1.min.js" ></script>
+		<script type="text/javascript" src="jquery.mobile-1.4.5/jquery.mobile-1.4.5.js"></script>
+		<link rel="stylesheet" href="jquery.mobile-1.4.5/jquery.mobile-1.4.5.css" />
+		<link rel="stylesheet" href="css/common.css" />
+		
+		<script type="text/javascript" src="js/common.js" ></script>
+		<script type="text/javascript" src="js/search.js" ></script>
+
+		<title>宝宝攻略</title>
+	</head>
+	<body>
+		<div data-role="page">
+
+			<div data-role="header" data-position="fixed" data-tap-toggle="false">
+				<a data-rel="back" data-transition="slide" class="headerbtn back"> </a>
+
+				<input id="searchtext" class="searchinput" type="text" data-role="none" placeholder="请输入产品名称或文章标题">
+				<a onclick="showsearchlist()" class="headerbtn search"> </a>
+			</div>
+
+			<div data-role="content">
+				<div>
+			    	<div class="pinksquare"></div>
+			    	<span class="pinkfont">热门搜索</span>
+				</div>
+				<div id="searchwords">
+				</div>
+            </div>
+            
+			<div data-role="footer" data-position="fixed" data-tap-toggle="false">
+			</div>
+			
+		</div>
+	</body>
+
+</html>

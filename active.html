@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+		<script type="text/javascript" src="js/touchSlider/jquery-1.7.1.min.js" ></script>
+		<script type="text/javascript" src="jquery.mobile-1.4.5/jquery.mobile-1.4.5.js"></script>
+		<link rel="stylesheet" href="jquery.mobile-1.4.5/jquery.mobile-1.4.5.css" />
+		<link rel="stylesheet" href="css/common.css" />
+		
+		<script type="text/javascript" src="js/common.js" ></script>
+		<script type="text/javascript" src="js/active.js" ></script>
+		<title>宝宝攻略</title>
+	</head>
+	<body>
+		<div data-role="page">
+
+			<div data-role="header" data-position="fixed" data-tap-toggle="false">
+				<a href="goodstype.html" data-ajax="false"  data-transition="slide" data-direction="reverse" class="headerbtn goodsType"> </a>
+				<h1>宝宝攻略</h1>
+			</div>
+
+			<div data-role="content">
+				<ul id="activelist" class="imgullist"> </ul>
+            </div>
+            
+			<div data-role="footer" data-position="fixed" data-tap-toggle="false">
+				<div data-role="navbar">
+					<ul class="navbarul">
+						<li><a href="recommend_find.html" data-ajax="false"  data-transition="slidefade" class="navbarbtn recommend">推荐</a></li>
+						<li><a href="comment.html" data-ajax="false"  data-transition="slidefade" class="navbarbtn comment">测评</a></li>
+						<li><a href="#" data-ajax="false"  data-transition="slidefade" class="navbarbtn active-active ui-btn-active ui-state-persist" >活动</a></li>
+						<li><a href="classroom.html" data-ajax="false"  data-transition="slidefade" class="navbarbtn classroom">课堂</a></li>
+					</ul>
+				</div>
+			</div>
+			
+		</div>
+	</body>
+
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+		<script type="text/javascript" src="js/touchSlider/jquery-1.7.1.min.js"></script>
+		<script type="text/javascript" src="jquery.mobile-1.4.5/jquery.mobile-1.4.5.js"></script>
+		<link rel="stylesheet" href="jquery.mobile-1.4.5/jquery.mobile-1.4.5.css" />
+		<link rel="stylesheet" href="css/common.css" />
+
+		<script type="text/javascript" src="js/common.js"></script>
+		<script type="text/javascript" src="js/goods.js"></script>
+		<script type="text/javascript" src="js/touchSlider/jquery.event.drag-1.5.min.js"></script>
+		<script type="text/javascript" src="js/touchSlider/jquery.touchSlider.js"></script>
+
+		<title>宝宝攻略</title>
+	</head>
+
+	<body>
+		<div data-role="page" id="pageone">
+
+			<div data-role="header" data-position="inline" data-tap-toggle="false">
+				<a data-rel="back" data-transition="slide" class="headerbtn back"> </a>
+				<h1>商品详情</h1>
+			</div>
+
+			<div data-role="content"  class="nopadding">
+				<!--图片轮播-->
+				<div class="main_visual">
+					<div id="rollbtn" class="flicking_con">
+					</div>
+					<div class="main_image">
+						<ul id="rollimg"> </ul>
+						<a href="javascript:;" id="btn_prev"></a>
+						<a href="javascript:;" id="btn_next"></a>
+					</div>
+				</div>
+				<!--商品价格及简介-->
+				<div class="whitebg">
+					<strong id="g_price" class="nomalprice"></strong>
+					<s id="g_discountprice" class="discountprice"></s>
+					<span id="g_discountper" class="discountper"></span>
+					<div class="split"></div>
+					<span id="g_name" class="detailtitle"></span>
+					<div class="notediv">
+						<img src="img/goods/商品详情-1.png" />
+						<span>满69包邮</span>
+						<img src="img/goods/商品详情-2.png" />
+						<span>100%正品</span>
+						<img src="img/goods/商品详情-3.png" />
+						<span>海外直采</span>
+						<img src="img/goods/商品详情-4.png" style="height: 8px;" />
+						<span>正品保证</span>
+					</div>
+				</div>
+				<!--攻略君推荐-->
+				<div class="whitebg">
+					<div class="title">
+						<span class="indenttitleMarker"></span>
+						<span>攻略君推荐</span>
+					</div>
+					<div class="split"></div>
+					<div class="imgleftdiv">
+						<img id="g_BrandIdImage" src="img/default.jpg">
+						<div>
+							<p id="g_describe"></p>
+						</div>
+					</div>
+				</div>
+				<!--商品评论-->
+				<div class="whitebg">
+					<div class="title">
+						<span class="indenttitleMarker"></span>
+						<span>看看别人怎么说</span>
+					</div>
+					<div class="split"></div>
+					<ul id="discusslist" class="discusslist">
+					</ul>
+				</div>
+				<!--品牌介绍-->
+				<div class="whitebg">
+					<div class="title">
+						<span class="indenttitleMarker"></span>
+						<span>品牌介绍</span>
+					</div>
+					<div class="split"></div>
+					<div class="imgleftdiv">
+						<img id="g_BrandIdImage" src="img/default.jpg">
+						<div>
+							<span id="g_BrandIdName"></span>
+							<p id="g_BrandIdDescription"></p>
+						</div>
+					</div>
+				</div>
+				<!--产品参数-->
+				<div class="whitebg">
+					<div class="title">
+						<span class="indenttitleMarker"></span>
+						<span>产品参数</span>
+						<a class="more" href="#pagetwo" data-transition="slideup">更多</a>
+					</div>
+					<div class="split"></div>				
+				</div>
+			</div>
+
+			<div data-role="footer" data-position="fixed" data-tap-toggle="false">
+			</div>
+
+		</div>
+	
+	    <div data-role="page" id="pagetwo">
+
+			<div data-role="header" data-position="fixed" data-tap-toggle="false">
+				<a data-rel="back" data-transition="slide" class="headerbtn back"> </a>
+				<h1>商品详情</h1>
+			</div>
+
+			<div data-role="content" style="padding:0; height: 100%;">
+				<iframe width="100%" height="100%" marginheight="0" marginwidth="0" frameborder="0" src="http://www.baidu.com"></iframe>
+			</div>
+
+			<div data-role="footer" data-position="fixed" data-tap-toggle="false">
+			</div>
+
+		</div>
+	
+	</body>
+
+</html>
